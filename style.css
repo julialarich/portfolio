@@ -53,3 +53,8 @@ dialog{width:min(820px,94vw)}#case-content{padding:36px clamp(20px,4vw,52px) 40p
 .sport .visual>img{position:absolute;inset:0 auto auto 0;display:block;width:100%;height:auto;min-height:0;max-width:100%;object-fit:initial;transform:none;transition:none}
 .yadro .visual>img{position:static;display:block;width:100%;height:100%;object-fit:contain;transform:none;transition:none}
 .sport:hover .visual>img,.yadro:hover .visual>img{transform:none}
+
+/* Keep the role on one line within the name width. */
+.hero-name>div{font-size:clamp(44px,7.7vw,112px)}
+.hero-position{font-size:.23em;line-height:1.4;max-width:none;white-space:nowrap;text-wrap:nowrap;margin-top:14px}
+@media(max-width:700px){.hero-name>div{font-size:clamp(36px,8vw,56px)}.hero-position{font-size:.23em;margin-top:12px}}
