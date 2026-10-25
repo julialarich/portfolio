@@ -58,3 +58,14 @@ dialog{width:min(820px,94vw)}#case-content{padding:36px clamp(20px,4vw,52px) 40p
 .hero-name>div{font-size:clamp(44px,7.7vw,112px)}
 .hero-position{font-size:.23em;line-height:1.4;max-width:none;white-space:nowrap;text-wrap:nowrap;margin-top:14px}
 @media(max-width:700px){.hero-name>div{font-size:clamp(36px,8vw,56px)}.hero-position{font-size:.23em;margin-top:12px}}
+
+/* Updated SMM slide grids: preserve every artwork and its proportions. */
+.project.alfa,.project.sibur{grid-column:1 / -1}
+.alfa .visual,.sibur .visual{aspect-ratio:auto;background:transparent;overflow:hidden;border-radius:6px}
+.smm-posts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(4px,1vw,16px)}
+.smm-posts img,.smm-video-posts img,.smm-sibur-row img{display:block;width:100%;height:auto;border-radius:4px}
+.smm-video-posts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(8px,1.6vw,32px);margin-top:clamp(16px,3vw,40px)}
+.smm-sibur-row{display:grid;gap:clamp(4px,1vw,16px);align-items:start}
+.smm-sibur-top{grid-template-columns:454fr 453fr 804fr;margin-bottom:clamp(4px,.55vw,10px);width:98.6%}
+.smm-sibur-bottom{grid-template-columns:453.611fr 453.611fr 454.029fr 363.056fr}
+@media(max-width:700px){.smm-posts{grid-template-columns:repeat(2,minmax(0,1fr))}.smm-sibur-top{width:100%;grid-template-columns:repeat(2,minmax(0,1fr))}.smm-sibur-top img:last-child{grid-column:1/-1}.smm-sibur-bottom{grid-template-columns:repeat(2,minmax(0,1fr))}.smm-sibur-bottom img:last-child{width:80%;justify-self:center}}
